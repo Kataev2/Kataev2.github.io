@@ -53,15 +53,16 @@ function initDom(){
     let numberPage = Math.ceil(users.length / 5);
     let btnInner = '';
     for(let j = 0; j < numberPage; j++) {
-        let btn = `<div class="table__btn">
-        ${j + 1}</div>`;
+        let btn = `<div class="table__btn">${j + 1}</div>`;
         btnInner += btn;
     }
     btnContainer.innerHTML = btnInner;
+    document.querySelectorAll('.table__btn')[page-1].classList.add('active');
 }
-$(document).on('click', '.table__btn', function(){
+$(document).on('click', '.table__btn', function(e){
     page = $(this).text();
     initDom();
+    console.log(e.target);
 })
 
 // ---- Datepicker ----
