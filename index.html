@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- CSS -->
+    <link rel="stylesheet" href="libs/slick/slick.css"/>
+    <link rel="stylesheet" href="libs/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/datepicker.material.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="description" content="FV">
+    <meta name="viewport" content="width=1200">
+
+    <title>Some Title</title>
+
+  </head>
+  <body>
+    
+    <div class="form">
+      <div class="container">
+        <form action="" class="form__inner"  id="ajax_form">
+          <input class="form__item" name="name" type="text" placeholder="ФИО">
+          <input class="form__item" name="date" type="text" placeholder="Дата рождения" id="simple">
+          <input class="form__item" type="text" name="email" placeholder="email">
+          <input class="form__item" name="phone" type="text" id="phone" placeholder="Телефон">
+          <input class="form__item" name="distant" type="text" list="form-number" placeholder="Дистанция">
+          <input class="form__item" name="sum" type="text" placeholder="Сумма взноса">
+          <input type="submit" class="form__btn">
+        </form>
+      </div>
+      <datalist id="form-number">
+        <option value="3 км"></option>
+        <option value="5 км"></option>
+        <option value="10 км"></option>
+      </datalist>
+    </div>
+    
+    <div class="table">
+      <table class="table__box">
+        <thead class="table__inner">
+          <th class="table__item">ФИО</th>
+          <th class="table__item sort">Дата рождения</th>
+          <th class="table__item">E-mail</th>
+          <th class="table__item">Телефон</th>
+          <th class="table__item sort">Дистанция</th>
+          <th class="table__item sort">Взнос</th>
+          <th class="table__item sort">Дата регистрации</th>
+        </thead>
+        <tbody class="table__container">
+          
+        </tbody>
+  
+      </table>
+      <div class="table__btn-container">
+        
+      </div>
+    </div>
+    
+    <script src="libs/jquery-3.5.1.min.js"></script>
+    <script src="libs/datepicker.js"></script>
+    <script src="libs/jquery.maskedinput.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/pagenation.js"></script>
+  </body>
+</html>
